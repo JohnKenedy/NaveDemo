@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".VerifyDetailsFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:text="Verify your entered details below" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Name"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        tools:text="Name"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Mobile Number"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_mobile_number"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        tools:text="Mobile Number"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
