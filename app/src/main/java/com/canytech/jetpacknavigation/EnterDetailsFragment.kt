@@ -44,13 +44,16 @@ class EnterDetailsFragment : Fragment() {
                 }
                 //Moving data
                 else -> {
-                    val bundle = bundleOf(
-                        "name" to firstName,
-                        "mobile" to mobile.toLong()
-                    )
                     //Set Bundle
-                    findNavController().navigate(R.id.action_enterDetailsFragment_to_verifyDetailsFragment
-                        ,bundle)
+                    findNavController().navigate(
+                        EnterDetailsFragmentDirections
+                            .actionEnterDetailsFragmentToVerifyDetailsFragment(
+                                firstName,
+                                mobile.toLong()
+                            )
+                    )
+
+                        
                 }
             }
         }
